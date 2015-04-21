@@ -1,0 +1,101 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - Artsy+Authentication (1.0.0):
+    - ISO8601DateFormatter
+    - NSURL+QueryDictionary
+    - TwitterReverseAuth
+  - Artsy+UIColors (1.0.0):
+    - EDColor (~> 0.4)
+  - Artsy+UIFonts (1.0.0)
+  - Artsy+UILabels (HEAD based on 1.3.1):
+    - Artsy+UIColors
+  - Artsy-UIButtons (HEAD based on 1.3.0):
+    - Artsy+UIColors
+    - UIView+BooleanAnimations
+  - EDColor (0.4.0)
+  - FastttCamera (0.2.9):
+    - FastttCamera/Default (= 0.2.9)
+  - FastttCamera/Default (0.2.9)
+  - FSOpenInInstagram (1.0)
+  - INTULocationManager (3.0.1)
+  - ISO8601DateFormatter (0.7)
+  - Keys (1.0.2)
+  - KVOController (1.0.3)
+  - KZPropertyMapper (2.5.1)
+  - NSURL+QueryDictionary (1.1.0)
+  - ObjectiveSugar (1.1.0)
+  - SSDataSources (0.8.5)
+  - STLOAuth (1.0.0):
+    - AFNetworking (~> 1.0RC1)
+  - TwitterReverseAuth (1.0):
+    - AFNetworking (~> 1.3.4)
+    - STLOAuth
+  - UICKeyChainStore (2.0.4)
+  - UIView+BooleanAnimations (1.0.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Artsy+Authentication (from `git@github.com:artsy/Artsy_Authentication.git`)
+  - Artsy+UIColors
+  - Artsy+UIFonts (= 1.0.0)
+  - Artsy+UILabels (HEAD)
+  - Artsy-UIButtons (HEAD)
+  - FastttCamera (from `git@github.com:orta/FastttCamera.git`)
+  - FSOpenInInstagram (~> 1.0)
+  - INTULocationManager
+  - Keys (from `https://github.com/ashfurrow/empty-podspec.git`)
+  - KVOController
+  - KZPropertyMapper
+  - ObjectiveSugar (= 1.1.0)
+  - SSDataSources (from `git@github.com:orta/SSDataSources.git`)
+  - UICKeyChainStore
+  - UIView+BooleanAnimations
+
+EXTERNAL SOURCES:
+  Artsy+Authentication:
+    :git: git@github.com:artsy/Artsy_Authentication.git
+  FastttCamera:
+    :git: git@github.com:orta/FastttCamera.git
+  Keys:
+    :git: https://github.com/ashfurrow/empty-podspec.git
+  SSDataSources:
+    :git: git@github.com:orta/SSDataSources.git
+
+CHECKOUT OPTIONS:
+  Artsy+Authentication:
+    :commit: e15faa36e7e6668505037a6f71b2f18ae2a647bd
+    :git: git@github.com:artsy/Artsy_Authentication.git
+  FastttCamera:
+    :commit: 2416f085b2777b6543485394b2b0522ddec0d45d
+    :git: git@github.com:orta/FastttCamera.git
+  Keys:
+    :commit: dfc3c5e75dd23e5e9f938f4552eaceec4a8b4b73
+    :git: https://github.com/ashfurrow/empty-podspec.git
+  SSDataSources:
+    :commit: 424148e7e0bb9a312eed9eb388069537dd1c8fbc
+    :git: git@github.com:orta/SSDataSources.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  Artsy+Authentication: c59e8dc04b2f28892185a663768437baa887bab7
+  Artsy+UIColors: d1d5e084a0e542d310c507acb5446bae6a322241
+  Artsy+UIFonts: fb0a70f93ca888d45a3af751707701fe8cbeae2a
+  Artsy+UILabels: a7c713069e3d10144a3dc8e377bef8b2253cd766
+  Artsy-UIButtons: be101574d2d61d310620319252c56ec98d5181c3
+  EDColor: 89d19a013279a5604d61650721c15f20fefaaf00
+  FastttCamera: bd173337377bcf4f1fb698bab3362fcf2914039c
+  FSOpenInInstagram: 5c3a0721f4f3b1529c1b4768e11c579e5e61bef2
+  INTULocationManager: c27483113e1bbc5952ead6417f9b39824a240ebb
+  ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
+  Keys: 0feb3c779714b9ddbb40a8214ca348af3ea4986c
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
+  KZPropertyMapper: e80e83aa3bc6d37a6dd55e3d04a01afcb8c23d3c
+  NSURL+QueryDictionary: dd0a5fec689a9b4780b6fa0e0225c01ca3ea653e
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  SSDataSources: b01170fb23b82acf0649194e9189b0bf5f702681
+  STLOAuth: f688148d8e0c5a6c52b18201231f0f2b1a7383e6
+  TwitterReverseAuth: 68cb76102504147dbd37b77d54c684eeda0e18ae
+  UICKeyChainStore: 69eb0c3a6f669bccf16ba88de3b9069b71501361
+  UIView+BooleanAnimations: a760be9a066036e55f298b7b7350a6cb14cfcd97
+
+COCOAPODS: 0.37.0.beta.1

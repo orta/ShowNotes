@@ -1,25 +1,391 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hzI-jq-KqA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AGaramondPro-Regular.otf">
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+        </mutableArray>
+        <mutableArray key="ITC_Avant_Garde_Gothic__Demi.ttf">
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Setup View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need access to location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Db-CKA" customClass="ARSerifLabel">
+                                <rect key="frame" x="35" y="195" width="202" height="39"/>
+                                <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ej-KX-zAB">
+                                <rect key="frame" x="35" y="34" width="277" height="41"/>
+                                <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgS-iC-yc6">
+                                <rect key="frame" x="121" y="501" width="133" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="15"/>
+                                <state key="normal" title="OK, LETS GO">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gIu-6t-LZ6" kind="show" id="bd6-Jy-h3c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asb-C1-oZh">
+                                <rect key="frame" x="245" y="195" width="114" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="15"/>
+                                <state key="normal" title="GET ACCESS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestAccessTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AR4-Jq-Vv1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Authenticating with Artsy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6on-QX-ajy" customClass="ARSerifLabel">
+                                <rect key="frame" x="35" y="252" width="324" height="21"/>
+                                <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5YM-Dv-H6Q"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="accessToLocationLabel" destination="gvt-Db-CKA" id="loW-b6-5nj"/>
+                        <outlet property="authenticatingWithArtsyLabel" destination="6on-QX-ajy" id="hkt-I7-0oW"/>
+                        <outlet property="continueButton" destination="zgS-iC-yc6" id="1cH-rH-jwF"/>
+                        <outlet property="locationAccessButton" destination="Asb-C1-oZh" id="j1I-UT-UjR"/>
+                        <outlet property="locationController" destination="nPD-PO-eVX" id="cqa-iv-6vO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <customObject id="nPD-PO-eVX" customClass="ShowLocationsController"/>
             </objects>
+            <point key="canvasLocation" x="202.5" y="500.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WUb-Iw-xkY">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="hzI-jq-KqA" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JiW-97-T4P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cBy-Jw-HMv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epo-1p-czR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-375"/>
+        </scene>
+        <!--Show Finder View Controller-->
+        <scene sceneID="HuN-oV-ppP">
+            <objects>
+                <viewController id="gIu-6t-LZ6" customClass="ShowFinderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UIH-ty-X4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="W6g-iU-LC9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H3G-Cy-BhM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H1I-WW-MZH">
+                                <rect key="frame" x="0.0" y="134" width="375" height="449"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="show" rowHeight="72" id="Qie-h6-UPs" customClass="ShowResultTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qie-h6-UPs" id="JFh-D1-Bjx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jrj-6X-w1D">
+                                                    <rect key="frame" x="16" y="6" width="60" height="60"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE OF SHOW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-8S-nVd">
+                                                    <rect key="frame" x="90" y="8" width="271" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="something" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-0V-hFP" customClass="ARSerifLabel">
+                                                    <rect key="frame" x="90" y="37" width="271" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="Jrj-6X-w1D" id="zzT-GY-Fsb"/>
+                                            <outlet property="subtitleLabel" destination="hCL-0V-hFP" id="ovb-Wc-5rP"/>
+                                            <outlet property="titleLabel" destination="UTf-8S-nVd" id="heu-M2-fE2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCx-B9-Khe">
+                                <rect key="frame" x="0.0" y="-2" width="375" height="134"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gIu-6t-LZ6" id="tlf-9s-ztA"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-xW-Ij3">
+                                <rect key="frame" x="238" y="603" width="91" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="15"/>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H1I-WW-MZH" firstAttribute="leading" secondItem="H3G-Cy-BhM" secondAttribute="leadingMargin" constant="-16" id="0kd-nP-QQg"/>
+                            <constraint firstItem="H1I-WW-MZH" firstAttribute="top" secondItem="UCx-B9-Khe" secondAttribute="bottom" constant="2" id="CNc-1R-L11"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ahV-xW-Ij3" secondAttribute="trailing" constant="30" id="JF1-Lg-Qjj"/>
+                            <constraint firstItem="W6g-iU-LC9" firstAttribute="top" secondItem="ahV-xW-Ij3" secondAttribute="bottom" constant="25" id="b5O-WO-QUf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UCx-B9-Khe" secondAttribute="trailing" constant="-16" id="f1A-T9-q41"/>
+                            <constraint firstItem="UCx-B9-Khe" firstAttribute="leading" secondItem="H3G-Cy-BhM" secondAttribute="leadingMargin" constant="-16" id="ime-0u-mHe"/>
+                            <constraint firstItem="ahV-xW-Ij3" firstAttribute="top" secondItem="H1I-WW-MZH" secondAttribute="bottom" constant="20" id="k4f-G4-sLC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H1I-WW-MZH" secondAttribute="trailing" constant="-16" id="lCO-nE-eNL"/>
+                            <constraint firstItem="H1I-WW-MZH" firstAttribute="top" secondItem="UCx-B9-Khe" secondAttribute="bottom" constant="2" id="lZx-QF-yVV"/>
+                            <constraint firstItem="UCx-B9-Khe" firstAttribute="top" secondItem="H3G-Cy-BhM" secondAttribute="topMargin" constant="-2" id="pcU-lt-iU8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="UCx-B9-Khe" id="dai-JK-utf"/>
+                        <outlet property="showTableView" destination="H1I-WW-MZH" id="nOv-F2-SjH"/>
+                        <segue destination="dwe-pj-8HE" kind="show" identifier="GoToShow" id="FiR-Uf-3lh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gy-nq-3Om" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603.5" y="500.5"/>
+        </scene>
+        <!--Show View Controller-->
+        <scene sceneID="lLa-Pb-jb1">
+            <objects>
+                <viewController id="dwe-pj-8HE" customClass="ShowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ocg-uk-P68"/>
+                        <viewControllerLayoutGuide type="bottom" id="hzt-Nq-kYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tjm-52-9s5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gBt-6E-oRl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dwe-pj-8HE" id="U9W-Ib-rZj"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE OF SHOW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-rT-lqu">
+                                <rect key="frame" x="34" y="162" width="271" height="21"/>
+                                <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="something" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-Aj-0Na" customClass="ARSerifLabel">
+                                <rect key="frame" x="34" y="201" width="271" height="21"/>
+                                <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="something" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2Q-vc-uwP" customClass="ARSerifLabel">
+                                <rect key="frame" x="34" y="235" width="271" height="21"/>
+                                <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ToE-jr-XLz">
+                                <rect key="frame" x="0.0" y="291" width="375" height="376"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rzo-RI-g8D">
+                                    <size key="itemSize" width="119" height="117"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtworkCollectionViewCell" id="xBI-po-dLF" customClass="ArtworkCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="119" height="117"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydv-71-i5C">
+                                                    <rect key="frame" x="0.0" y="1" width="119" height="90"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="work name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZB-Hw-bFG" customClass="ARSerifLabel">
+                                                    <rect key="frame" x="8" y="96" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="artworkPreviewImageView" destination="ydv-71-i5C" id="D0x-UD-6qR"/>
+                                            <outlet property="artworkTitleLabel" destination="fZB-Hw-bFG" id="Czd-Y2-fRw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="0oZ-Wh-gid" id="7xl-et-8fJ"/>
+                                    <outlet property="delegate" destination="dwe-pj-8HE" id="CGV-1J-0Nz"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="gBt-6E-oRl" id="2d5-sz-bmm"/>
+                        <outlet property="showArtworksDataSource" destination="0oZ-Wh-gid" id="Wu6-OU-XUK"/>
+                        <outlet property="subSubtitleLabel" destination="b2Q-vc-uwP" id="dU4-A2-kSh"/>
+                        <outlet property="subtitleLabel" destination="2BA-Aj-0Na" id="gym-Uo-NhV"/>
+                        <outlet property="titleLabel" destination="KLc-rT-lqu" id="fpJ-io-aAK"/>
+                        <segue destination="p05-xd-xxS" kind="show" identifier="GoToArtwork" id="hYG-3h-GBC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vU-NG-HgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="0oZ-Wh-gid" customClass="SSArrayDataSource">
+                    <connections>
+                        <outlet property="collectionView" destination="ToE-jr-XLz" id="M3a-uS-0Db"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1058.5" y="500.5"/>
+        </scene>
+        <!--Show Notes View Controller-->
+        <scene sceneID="ok8-sG-yhB">
+            <objects>
+                <viewController id="p05-xd-xxS" customClass="ShowNotesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WKr-sh-fdE"/>
+                        <viewControllerLayoutGuide type="bottom" id="ESg-Xt-FOZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IZ5-l8-DWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hB-mQ-g5F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                <connections>
+                                    <segue destination="lm5-jt-HfX" kind="embed" id="KfP-29-wqW"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytM-IP-0SB">
+                                <rect key="frame" x="11" y="15" width="70" height="72"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d44-Gc-JXK">
+                                <rect key="frame" x="226" y="608" width="127" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="15"/>
+                                <state key="normal" title="INSTAGRAM">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="instagramButtonTapped:" destination="p05-xd-xxS" eventType="touchUpInside" id="7up-SM-ChN"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1q9-FN-nYF">
+                                <rect key="frame" x="0.0" y="450" width="375" height="136"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xbi-Y6-hfp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE OF SHOW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26E-ex-5uU">
+                                            <rect key="frame" x="23" y="32" width="271" height="21"/>
+                                            <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="something" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-zX-z6S" customClass="ARSerifLabel">
+                                            <rect key="frame" x="23" y="71" width="271" height="21"/>
+                                            <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="artworkPreviewImage" destination="ytM-IP-0SB" id="5d5-NE-VlL"/>
+                        <outlet property="artworkSubtitleLabel" destination="ALa-zX-z6S" id="M4Y-IO-mAX"/>
+                        <outlet property="artworkTitleLabel" destination="26E-ex-5uU" id="6tW-EN-kS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7B-iD-GDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499.5" y="500.5"/>
+        </scene>
+        <!--Fasttt Camera-->
+        <scene sceneID="Waj-V5-dtr">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lm5-jt-HfX" customClass="FastttCamera" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8pn-hd-NdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zn6-zp-Te3"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="waF-NQ-m9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L66-iK-yqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092.5" y="123"/>
         </scene>
     </scenes>
 </document>

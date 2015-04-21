@@ -1,0 +1,8 @@
+#import "JSONable.h"
+#import "PartnerShow.h"
+#import "Artwork.h"
+#import "Image.h"
+#import "User.h"
+#import "Partner.h"
+#import "PartnerShowLocation.h"
+#import "PartnerShowCoordinates.h"
