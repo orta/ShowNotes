@@ -23,14 +23,12 @@
 
 - (void)awakeFromNib
 {
-    __weak __typeof__(self) weakSelf = self;
-
     self.showArtworksDataSource.cellClass = ArtworkCollectionViewCell.class;
-    self.showArtworksDataSource.cellConfigureBlock = ^(ArtworkCollectionViewCell *cell, NSString *element, UITableView *tableView, NSIndexPath *indexPath) {
-
-        __strong __typeof__(weakSelf) strongSelf = weakSelf;
-        Artwork *artwork = [strongSelf.showArtworksDataSource itemAtIndexPath:indexPath];
-
+    self.showArtworksDataSource.cellConfigureBlock = ^(ArtworkCollectionViewCell *cell,
+                                                       Artwork *artwork,
+                                                       UITableView *tableView,
+                                                       NSIndexPath *indexPath) {
+        
         NSURLRequest *request = [ARRouter directImageRequestForModel:Artwork.class andSlug:artwork.artworkID];
         [cell.artworkPreviewImageView ar_setImageWithURLRequest:request];
 
