@@ -6,7 +6,7 @@ PODS:
     - TwitterReverseAuth
   - Artsy+UIColors (1.0.0):
     - EDColor (~> 0.4)
-  - Artsy+UIFonts (1.0.0)
+  - Artsy+UIFonts (1.1.0)
   - Artsy+UILabels (HEAD based on 1.3.1):
     - Artsy+UIColors
   - Artsy-UIButtons (HEAD based on 1.3.0):
@@ -37,7 +37,7 @@ DEPENDENCIES:
   - AFNetworking
   - Artsy+Authentication (from `git@github.com:artsy/Artsy_Authentication.git`)
   - Artsy+UIColors
-  - Artsy+UIFonts (= 1.0.0)
+  - Artsy+UIFonts
   - Artsy+UILabels (HEAD)
   - Artsy-UIButtons (HEAD)
   - FastttCamera (from `git@github.com:orta/FastttCamera.git`)
@@ -79,7 +79,7 @@ SPEC CHECKSUMS:
   AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
   Artsy+Authentication: c59e8dc04b2f28892185a663768437baa887bab7
   Artsy+UIColors: d1d5e084a0e542d310c507acb5446bae6a322241
-  Artsy+UIFonts: fb0a70f93ca888d45a3af751707701fe8cbeae2a
+  Artsy+UIFonts: c51bb3b5cbf9c1a5fe198b4385d49133c5c71f5a
   Artsy+UILabels: a7c713069e3d10144a3dc8e377bef8b2253cd766
   Artsy-UIButtons: be101574d2d61d310620319252c56ec98d5181c3
   EDColor: 89d19a013279a5604d61650721c15f20fefaaf00

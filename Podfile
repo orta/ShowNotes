@@ -24,7 +24,7 @@ target 'Show Notes' do
   pod 'Artsy+UIColors'
   pod 'Artsy-UIButtons', :head
   pod 'UIView+BooleanAnimations'
-  pod 'Artsy+UIFonts', '1.0.0'
+  pod 'Artsy+UIFonts'
   pod 'ObjectiveSugar', '1.1.0'
   pod 'Artsy+Authentication', :git => "git@github.com:artsy/Artsy_Authentication.git"
   pod 'KZPropertyMapper'
